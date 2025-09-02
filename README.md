@@ -7,40 +7,40 @@
 - [x] Go Playground
 
 ## 1. Go 基礎
-- [ ] Variables & Data Types
-- [ ] Control Flow
-- [ ] Functions
-- [ ] Pointers
-- [ ] Structs & Methods
-- [ ] Go Modules
+- [x] Variables & Data Types
+- [x] Control Flow
+- [x] Functions
+- [x] Pointers
+- [x] Structs & Methods
+- [x] Go Modules
 
 ## 2. 進階 Go 特性
-- [ ] Interfaces
-- [ ] Error Handling
-- [ ] Package Management
-- [ ] Testing Basics
-- [ ] Go routines 入門
+- [x] Interfaces
+- [x] Error Handling
+- [x] Package Management
+- [x] Testing Basics
+- [x] Go routines 入門
 
 ## 3. 並發程式設計
-- [ ] Goroutines
-- [ ] Channels
-- [ ] Select Statement
-- [ ] Sync Package
-- [ ] Concurrency Patterns
+- [x] Goroutines
+- [x] Channels
+- [x] Select Statement
+- [x] Sync Package
+- [x] Concurrency Patterns
 
 ## 4. HTTP & Web 開發
-- [ ] HTTP Basics
-- [ ] net/http Package
-- [ ] Routing
-- [ ] Middleware
-- [ ] JSON Handling
-- [ ] Web Frameworks
-  - [ ] Gin
-  - [ ] Echo
-  - [ ] Fiber
+- [x] HTTP Basics
+- [x] net/http Package
+- [x] Routing
+- [x] Middleware
+- [x] JSON Handling
+- [x] Web Frameworks
+  - [x] Gin
+  - [x] Echo
+  - [x] Fiber
 
 ## 5. 資料庫
-- [ ] SQL Basics
+- [x] SQL Basics
 - [ ] database/sql Package
 - [ ] PostgreSQL
 - [ ] MySQL
@@ -138,3 +138,11 @@
 - [ ] Event-driven Architecture
 - [ ] Design Patterns
 - [ ] System Design
+
+---
+
+## 結論
+
+這個 Roadmap 提供了一個全面性的 Go 語言學習路徑。從基礎的開發環境設定，到核心的語法、進階特性、強大的並發模型，最終到實用的 Web 開發，涵蓋了成為一位合格 Go 開發者所需的關鍵技能。
+
+透過完成這些章節的學習與實作，您將為打造高效能、高可靠性的現代化應用程式奠定堅實的基礎。
