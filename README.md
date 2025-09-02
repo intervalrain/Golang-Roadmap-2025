@@ -86,12 +86,12 @@
 - [x] Load Testing
 
 ## 11. 日誌與監控
-- [ ] Logging Best Practices
-- [ ] Structured Logging
-- [ ] Log Aggregation
-- [ ] Monitoring & Metrics
-- [ ] Health Checks
-- [ ] Error Tracking
+- [x] Logging Best Practices
+- [x] Structured Logging
+- [x] Log Aggregation
+- [x] Monitoring & Metrics
+- [x] Health Checks
+- [x] Error Tracking
 
 ## 12. 外部服務整合
 - [ ] HTTP Clients
