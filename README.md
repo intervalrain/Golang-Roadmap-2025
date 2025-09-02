@@ -4,7 +4,7 @@
 - [x] Go 安裝與設定
 - [x] Visual Studio Code
 - [x] Go extensions
-- [ ] Go Playground
+- [x] Go Playground
 
 ## 1. Go 基礎
 - [ ] Variables & Data Types
