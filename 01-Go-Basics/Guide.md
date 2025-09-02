@@ -301,7 +301,7 @@ func subtract(a, b int) int {
 }
 ```
 
----
+--- 
 
 ## 2. 多重回傳值 (Multiple Return Values)
 
@@ -318,7 +318,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
----
+--- 
 
 ## 3. 具名回傳值 (Named Return Values)
 
@@ -336,7 +336,7 @@ func divideWithNamedReturn(a, b float64) (result float64, err error) {
 }
 ```
 
----
+--- 
 
 ## 4. 可變參數函式 (Variadic Functions)
 
@@ -543,5 +543,78 @@ func main() {
 `Structs` 和 `Methods` 是 Go 實現「封裝」的基礎，讓您可以建立具有行為的自訂資料型別。這是 Go 程式設計中建構複雜、有組織應用程式的核心。
 
 接下來，我們將學習 Go 的依賴管理系統：`Go Modules`。
+
+---
+
+# Chapter 1.6: Go Modules
+
+**Go Modules** 是 Go 官方的依賴管理系統。在現代軟體開發中，我們很少從零開始打造所有東西，而是會依賴許多其他人寫好的「套件 (packages)」。Go Modules 幫助我們定義專案的依賴關係，並自動下載和管理這些套件的版本。
+
+我們在 `Chapter 0` 中已經使用過 `go mod init`，現在讓我們更深入地了解它。
+
+---
+
+## 1. 核心概念 (Core Concepts)
+
+- **Module**: 一個 Module 是一系列 Go packages 的集合。一個專案通常就是一個 module。
+- **`go.mod`**: 每個 module 的根目錄下都有一個 `go.mod` 檔案。它定義了：
+    1.  當前 module 的路徑（名稱）。
+    2.  專案所需的最低 Go 版本。
+    3.  專案所依賴的其他 modules 列表（以及它們的特定版本）。
+- **`go.sum`**: 這個檔案會自動產生，它包含了專案直接和間接依賴套件的預期加密雜湊值 (cryptographic hashes)。這確保了您每次建置專案時，所使用的依賴套件都跟預期完全相同，增加了安全性。
+
+## 2. 常用指令 (Common Commands)
+
+您通常會在您的專案根目錄下執行這些指令。
+
+- **`go mod init [module-path]`**: 初始化一個新的 module。`module-path` 通常是您的程式碼倉庫路徑，例如 `github.com/username/project`。
+    ```bash
+    go mod init github.com/my-user/my-project
+    ```
+
+- **`go get [package-path]`**: 下載並新增一個新的依賴。`go get` 會自動更新 `go.mod` 和 `go.sum`。
+    ```bash
+    # 下載最新版的 rsc.io/quote 套件
+    go get rsc.io/quote
+    ```
+
+- **`go mod tidy`**: 這是最常用的指令之一。它會「整理」您的 `go.mod` 和 `go.sum` 檔案。它會移除您程式碼中不再使用的依賴，並新增您程式碼中用到但尚未記錄在 `go.mod` 中的依賴。
+    ```bash
+    go mod tidy
+    ```
+
+- **`go list -m all`**: 顯示當前 module 的所有依賴。
+
+## 3. 範例流程 (Example Workflow)
+
+1.  建立一個新專案資料夾 `my-app`。
+2.  進入資料夾，初始化 module: `go mod init my-app`。
+3.  建立 `main.go` 並加入以下程式碼，我們將使用一個外部套件 `rsc.io/quote`。
+    ```go
+    package main
+
+    import (
+        "fmt"
+        "rsc.io/quote"
+    )
+
+    func main() {
+        fmt.Println(quote.Go())
+    }
+    ```
+4.  執行 `go mod tidy`。Go 會發現您 `import` 了一個新套件，自動下載它，並更新 `go.mod` 和 `go.sum`。
+5.  執行 `go run .`，您將會看到一句來自 Go 共同創作者的名言。
+
+---
+
+## Conclusion
+
+恭喜！您已經完成了 Go 基礎的第一章！
+
+您現在已經掌握了 Go 程式設計的基石：從變數、流程控制、函式，到更進階的指標、結構與方法，最後了解瞭如何使用 Go Modules 來管理專案。這些知識將是您邁向更複雜、更強大 Go 應用程式的基礎。
+
+在下一章，我們將探索 `進階 Go 特性 (Advanced Go Features)`，例如 `Interfaces` 和 `Error Handling`。
+
+```
 
 ```
