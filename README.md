@@ -1,9 +1,9 @@
 # Go 開發 Roadmap
 
 ## 0. 開發環境
-- [ ] Go 安裝與設定
-- [ ] Visual Studio Code
-- [ ] Go extensions
+- [x] Go 安裝與設定
+- [x] Visual Studio Code
+- [x] Go extensions
 - [ ] Go Playground
 
 ## 1. Go 基礎

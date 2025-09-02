@@ -1,17 +1,17 @@
-# 第 1 章：開發環境設定
+# Chapter 0: Development Environment Setup
 
 歡迎來到 Go 語言學習之路的第一章！在本章節中，我們將引導您完成 Go 開發環境的設定。一個好的開發環境是高效學習和開發的基礎。
 
 ## 學習重點
 
-- 安裝 Go 語言
-- 設定您的工作區 (Workspace)
-- 選擇並設定一個程式碼編輯器
+- 安裝 Go
+- 設定您的 Workspace
+- 選擇並設定一個 Code Editor
 - 撰寫並執行您的第一個 Go 程式
 
 ---
 
-## 1. 安裝 Go
+## 1. Install Go
 
 首先，我們需要從官方網站下載並安裝 Go。
 
@@ -22,7 +22,7 @@
     *   **Windows**: 執行 `.msi` 安裝檔，依照提示完成。預設會安裝在 `C:\Program Files\Go`。
     *   **Linux**: 將下載的 `.tar.gz` 檔案解壓縮到 `/usr/local`。
 
-4.  **驗證安裝**：開啟一個新的終端機（Terminal）或命令提示字元（Command Prompt），輸入以下指令：
+4.  **驗證安裝**：開啟一個新的 **Terminal** 或 **Command Prompt**，輸入以下指令：
 
     ```bash
     go version
@@ -32,9 +32,9 @@
 
 ---
 
-## 2. 設定工作區
+## 2. Setup Workspace
 
-從 Go 1.11 版本開始，Go 引入了 `Go Modules` 的概念，這使得專案可以存在於 `GOPATH` 之外的任何地方，`GOPATH` 的重要性因此降低了。我們強烈建議所有新專案都使用 Go Modules。
+從 Go 1.11 版本開始，Go 引入了 **Go Modules** 的概念，這使得專案可以存在於 `GOPATH` 之外的任何地方，`GOPATH` 的重要性因此降低了。我們強烈建議所有新專案都使用 **Go Modules**。
 
 您的預設 `GOPATH` 通常在 `$HOME/go`（macOS/Linux）或 `%USERPROFILE%\go`（Windows）。您可以透過 `go env` 指令查看相關的環境變數。
 
@@ -42,20 +42,31 @@
 
 ---
 
-## 3. 選擇並設定編輯器
+## 3. Editor and Extensions
 
-一個好的程式碼編輯器可以大幅提升您的開發效率。
+一個好的 **Code Editor** 可以大幅提升您的開發效率。我們推薦使用 Visual Studio Code。
 
-- **Visual Studio Code (VS Code)**：這是目前最受歡迎的選擇，免費且強大。
-    1.  [下載並安裝 VS Code](https://code.visualstudio.com/)。
-    2.  在 VS Code 中，前往擴充套件市場，搜尋並安裝官方的 **Go** 擴充套件 (`golang.Go`)。
-    3.  安裝後，VS Code 可能會提示您安裝額外的 Go 工具（如 `gopls`, `gofmt` 等），請務必點選 "Install All"。
+### 3.1. Install Visual Studio Code
+
+- **下載與安裝**：前往 [Visual Studio Code 官方網站](https://code.visualstudio.com/) 下載並安裝適合您作業系統的版本。
+
+### 3.2. Install Go Extensions
+
+為了在 VS Code 中獲得最好的 Go 開發體驗（例如：程式碼自動完成、定義跳轉、語法檢查等），您需要安裝官方的 Go **Extension**。
+
+1.  **開啟 VS Code**。
+2.  點擊左側活動欄中的 **Extensions** 圖示。
+3.  在搜尋框中輸入 `Go`。
+4.  找到由 **Go Team at Google** 開發的 **Extension**（通常是第一個），點擊 **Install**。
+5.  安裝完成後，VS Code 右下角可能會彈出提示，詢問是否安裝額外的 Go 分析工具（如 `gopls`, `gofmt` 等）。請務必點選 **Install All**，這些工具對於開發至關重要。
+
+### 3.3. Other Editor Options
 
 - **GoLand**：由 JetBrains 公司開發的專業 Go IDE，功能非常強大，但需要付費。
 
 ---
 
-## 4. 您的第一個 Go 程式
+## 4. Your First Go Program
 
 現在，讓我們來撰寫並執行一個簡單的 "Hello, World!" 程式來確認環境是否設定成功。
 
@@ -63,12 +74,12 @@
     在您喜歡的位置（例如我們剛才提到的 `~/go-projects`）建立一個新的資料夾，例如 `hello-world`。
 
 2.  **初始化 Go Module**：
-    在終端機中，進入 `hello-world` 資料夾，並執行以下指令：
+    在 **Terminal** 中，進入 `hello-world` 資料夾，並執行以下指令：
 
     ```bash
     go mod init example.com/hello-world
     ```
-    `example.com/hello-world` 是這個模組的路徑，您可以換成您自己的。執行成功後，資料夾內會多一個 `go.mod` 檔案。
+    `example.com/hello-world` 是這個 **module** 的路徑，您可以換成您自己的。執行成功後，資料夾內會多一個 `go.mod` 檔案。
 
 3.  **建立 `main.go` 檔案**：
     在資料夾中建立一個名為 `main.go` 的檔案，並貼上以下程式碼：
@@ -84,7 +95,7 @@
     ```
 
 4.  **執行程式**：
-    在終端機中，執行以下指令：
+    在 **Terminal** 中，執行以下指令：
 
     ```bash
     go run main.go
@@ -94,7 +105,7 @@
 
 ---
 
-## 結論
+## Conclusion
 
 恭喜！您已經成功設定了 Go 的開發環境，並執行了您的第一個 Go 程式。這是一個非常重要的里程碑。
 
