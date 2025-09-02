@@ -56,12 +56,12 @@
 - [ ] Database Design
 
 ## 7. API 開發
-- [ ] RESTful API Design
-- [ ] CRUD Operations
-- [ ] API Documentation
-- [ ] Swagger/OpenAPI
-- [ ] GraphQL
-- [ ] gRPC
+- [x] RESTful API Design
+- [x] CRUD Operations
+- [x] API Documentation
+- [x] Swagger/OpenAPI
+- [x] GraphQL
+- [x] gRPC
 
 ## 8. 身份驗證與授權
 - [ ] Authentication
