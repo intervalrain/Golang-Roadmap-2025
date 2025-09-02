@@ -79,11 +79,11 @@
 - [x] Test Coverage
 
 ## 10. 效能優化
-- [ ] Profiling (pprof)
-- [ ] Memory Management
-- [ ] Goroutine Optimization
-- [ ] Caching Strategies
-- [ ] Load Testing
+- [x] Profiling (pprof)
+- [x] Memory Management
+- [x] Goroutine Optimization
+- [x] Caching Strategies
+- [x] Load Testing
 
 ## 11. 日誌與監控
 - [ ] Logging Best Practices
