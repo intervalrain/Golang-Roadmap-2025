@@ -50,7 +50,7 @@
   - [ ] Redis
 
 ## 6. ORM
-- [ ] GORM
+- [x] GORM
 - [ ] Raw SQL vs ORM
 - [ ] Migrations
 - [ ] Database Design
