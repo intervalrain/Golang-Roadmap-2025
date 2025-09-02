@@ -71,12 +71,12 @@
 - [x] Session Management
 
 ## 9. 測試
-- [ ] Unit Testing
-- [ ] Table-driven Tests
-- [ ] Mocking
-- [ ] Integration Testing
-- [ ] Benchmark Testing
-- [ ] Test Coverage
+- [x] Unit Testing
+- [x] Table-driven Tests
+- [x] Mocking
+- [x] Integration Testing
+- [x] Benchmark Testing
+- [x] Test Coverage
 
 ## 10. 效能優化
 - [ ] Profiling (pprof)
