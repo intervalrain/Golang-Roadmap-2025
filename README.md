@@ -64,11 +64,11 @@
 - [x] gRPC
 
 ## 8. 身份驗證與授權
-- [ ] Authentication
-- [ ] Authorization
-- [ ] JWT
-- [ ] OAuth & OAuth2
-- [ ] Session Management
+- [x] Authentication
+- [x] Authorization
+- [x] JWT
+- [x] OAuth & OAuth2
+- [x] Session Management
 
 ## 9. 測試
 - [ ] Unit Testing
