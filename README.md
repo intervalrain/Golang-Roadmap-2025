@@ -104,11 +104,11 @@
 - [x] Third-party APIs
 
 ## 13. 容器化
-- [ ] Docker Basics
-- [ ] Dockerfile 最佳實務
-- [ ] Multi-stage Builds
-- [ ] Docker Compose
-- [ ] Container Security
+- [x] Docker Basics
+- [x] Dockerfile 最佳實務
+- [x] Multi-stage Builds
+- [x] Docker Compose
+- [x] Container Security
 
 ## 14. DevOps & CI/CD
 - [ ] Git & GitHub
