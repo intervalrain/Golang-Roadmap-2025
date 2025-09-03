@@ -51,9 +51,9 @@
 
 ## 6. ORM
 - [x] GORM
-- [ ] Raw SQL vs ORM
-- [ ] Migrations
-- [ ] Database Design
+- [x] Raw SQL vs ORM
+- [x] Migrations
+- [x] Database Design
 
 ## 7. API 開發
 - [x] RESTful API Design
