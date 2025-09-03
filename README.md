@@ -119,25 +119,25 @@
 - [x] Environment Management
 
 ## 15. 雲端部署
-- [ ] Cloud Platforms
-  - [ ] AWS
-  - [ ] Google Cloud Platform
-  - [ ] Azure
-- [ ] Kubernetes
-- [ ] Load Balancing
-- [ ] Database Deployment
-- [ ] Serverless
-  - [ ] AWS Lambda
-  - [ ] Google Cloud Functions
+- [x] Cloud Platforms
+  - [x] AWS
+  - [x] Google Cloud Platform
+  - [x] Azure
+- [x] Kubernetes
+- [x] Load Balancing
+- [x] Database Deployment
+- [x] Serverless
+  - [x] AWS Lambda
+  - [x] Google Cloud Functions
 
 ## 16. 微服務與架構
-- [ ] Microservices Design
-- [ ] Service Discovery
-- [ ] API Gateway
-- [ ] Distributed Tracing
-- [ ] Event-driven Architecture
-- [ ] Design Patterns
-- [ ] System Design
+- [x] Microservices Design
+- [x] Service Discovery
+- [x] API Gateway
+- [x] Distributed Tracing
+- [x] Event-driven Architecture
+- [x] Design Patterns
+- [x] System Design
 
 ---
 
