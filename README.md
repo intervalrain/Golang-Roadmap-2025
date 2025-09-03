@@ -41,13 +41,13 @@
 
 ## 5. 資料庫
 - [x] SQL Basics
-- [ ] database/sql Package
-- [ ] PostgreSQL
-- [ ] MySQL
-- [ ] SQLite
-- [ ] NoSQL
-  - [ ] MongoDB
-  - [ ] Redis
+- [x] database/sql Package
+- [x] PostgreSQL
+- [x] MySQL
+- [x] SQLite
+- [x] NoSQL
+  - [x] MongoDB
+  - [x] Redis
 
 ## 6. ORM
 - [x] GORM
