@@ -111,12 +111,12 @@
 - [x] Container Security
 
 ## 14. DevOps & CI/CD
-- [ ] Git & GitHub
-- [ ] GitHub Actions
-- [ ] GitLab CI
-- [ ] Build Automation
-- [ ] Deployment Strategies
-- [ ] Environment Management
+- [x] Git & GitHub
+- [x] GitHub Actions
+- [x] GitLab CI
+- [x] Build Automation
+- [x] Deployment Strategies
+- [x] Environment Management
 
 ## 15. 雲端部署
 - [ ] Cloud Platforms
