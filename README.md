@@ -94,14 +94,14 @@
 - [x] Error Tracking
 
 ## 12. 外部服務整合
-- [ ] HTTP Clients
-- [ ] gRPC Clients
-- [ ] Message Queues
-  - [ ] RabbitMQ
-  - [ ] Apache Kafka
-  - [ ] NATS
-- [ ] Email Services
-- [ ] Third-party APIs
+- [x] HTTP Clients
+- [x] gRPC Clients
+- [x] Message Queues
+  - [x] RabbitMQ
+  - [x] Apache Kafka
+  - [x] NATS
+- [x] Email Services
+- [x] Third-party APIs
 
 ## 13. 容器化
 - [ ] Docker Basics
